@@ -1,0 +1,35 @@
+.main-3 {
+  width: 600px;
+  margin: 60px auto;
+  position: relative;
+}
+.main-3-img {
+  position: relative;
+}
+.main-3-cover {
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+}
+.main-3-profile {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+.main-3-text {
+  position: absolute;
+  bottom: 25px;
+  left: 20%;
+  color: white;
+  text-align: center;
+}
+.main-3-text h1 {
+  margin: 1px;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
