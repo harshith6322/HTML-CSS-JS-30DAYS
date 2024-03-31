@@ -1,0 +1,43 @@
+.main-4 {
+  width: 450px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  background-color: rgb(245, 251, 255);
+  border-radius: 50px 50px 0 0;
+  border: 1px solid lightslategray;
+}
+.main-4-img {
+  position: relative;
+}
+.main-4-cover {
+  width: 100%;
+  height: 150px;
+  border-radius: 50px 50px 0 0;
+}
+.main-4-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid white;
+}
+.main-4-text {
+  position: absolute;
+  top: 300px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.main-4-text h1 {
+  margin: 1px;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
