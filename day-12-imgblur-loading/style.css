@@ -1,0 +1,30 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  position: relative;
+  text-align: center;
+}
+
+.per {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+}
+
+.blur-img {
+  width: 100%;
+  height: auto;
+  filter: blur(0);
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}

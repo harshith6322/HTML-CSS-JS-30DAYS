@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="per">0%</div>
+      <img
+        class="blur-img"
+        src="https://www.hdwallpapers.in/download/demon_slayer_tanjiro_kamado_hd_anime-HD.jpg"
+        alt="Your Image"
+      />
+    </div>
+    <script>
+      const per = document.querySelector(".per");
+      const blurImg = document.querySelector(".blur-img");
+      let count = 0;
+      let isBlurred = false;
+
+      function setBlur(blurAmount) {
+        blurImg.style.filter = `blur(${blurAmount - 1}px)`;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".bg").addEventListener("click", () => {
+          let int = setInterval(() => {
+            if (!isBlurred) {
+              count++;
+            } else {
+              count--;
+            }
+
+            console.log(count);
+            if (count >= 100) {
+              clearInterval(int);
+              isBlurred = true;
+            } else if (count <= 0) {
+              clearInterval(int);
+              isBlurred = false;
+            } else {
+              per.textContent = `${count}%`;
+              setBlur(count); // Set the blur amount
+            }
+          }, 30);
+        });
+      });
+    </script>
+  </body>
+</html>
