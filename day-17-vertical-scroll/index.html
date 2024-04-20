@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" rel="preload"/>
+    <title>Document</title>
+  </head>
+
+  <body>
+   
+     <section class="content">
+      <div class="header">
+        <h2>Cars<span>.</span></h2>
+        <nav>
+          <a href="#car1">Supra</a>
+          <a href="#car2">porsche</a>
+          <a href="#car3">Bugatti</a>
+          <a href="#car4">Maclean</a>
+          <a href="#car5">Tata</a>
+        </nav>
+      </div>
+      <div class="section-1">
+        <div class="div" id="car1">
+          <h1 class="h2">Supra</h1>
+        </div>
+      </div>
+      <div class="section-1" id="car2">
+        <div class="div">
+          <h1 class="h2">porsche</h1>
+        </div>
+      </div>
+      <div class="section-1" id="car3">
+        <div class="div">
+          <h1 class="h2">Bugatti</h1>
+        </div>
+      </div>
+      <div class="section-1" id="car4">
+        <div class="div">
+          <h1 class="h2">Maclean</h1>
+        </div>
+      </div>
+      <div class="section-1" id="car5">
+        <div class="div">
+          <h1 class="h2">Tata</h1>
+        </div>
+      </div>
+     </section>
+      <div class="load mainload">
+        <!-- <img
+          src="https://i.pinimg.com/originals/e6/8c/4a/e68c4ac0052aed91573719d810dd1b3d.png"
+          alt=""
+          draggable="false"
+        /> -->
+        <h2 class="textload">Cars<span>.</span></h2>
+        <div class="loading">
+          <div></div>
+        </div>
+      </div>
+     
+    </body>
+    </section>
+    <script defer>
+      const loaderContainer = document.querySelector(".mainload");
+      console.log(loaderContainer);
+      const content = document.querySelector(".content");
+      console.log(content);
+        window.addEventListener("load", () => {
+          loaderContainer.classList.add("activeload"); // Hide loader
+          loaderContainer.classList.remove("mainload");
+          content.classList.remove("content");
+        });
+    </script>
+  </body>
+</html>
