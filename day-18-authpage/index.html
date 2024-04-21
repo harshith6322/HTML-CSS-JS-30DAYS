@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIVE BUS 🚌</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://erp.sathyabama.ac.in/assets/images/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,600;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <img
+        src="https://erp.sathyabama.ac.in/assets/images/sathyabama_header-logo-A++.jpg"
+        alt="LIVE BUS TRACKING"
+        width="200px"
+        height="55px"
+        style="margin-bottom: 35px"
+      />
+
+      <form id="login-form">
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <button id="submit-btn">Sign In</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
