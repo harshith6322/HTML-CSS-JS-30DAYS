@@ -1,12 +1,5 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyC2AP3gEjyFv32qmemLoImInWg9HgBwNDs",
-  authDomain: "busnav-d497c.firebaseapp.com",
-  databaseURL: "https://busnav-d497c-default-rtdb.firebaseio.com",
-  projectId: "busnav-d497c",
-  storageBucket: "busnav-d497c.appspot.com",
-  messagingSenderId: "118961984815",
-  appId: "1:118961984815:web:d8c2539e73cc7789a47dda",
-  measurementId: "G-DDV03QZQD6",
+  
 };
 
 // Initialize Firebase
