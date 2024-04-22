@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img-box"></div>
+    <div class="side-bar">
+      <h1>Logo</h1>
+      <nav>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+        <a href="#">home</a>
+      </nav>
+      <div class="btn"></div>
+    </div>
+    <script>
+      const btn = document.querySelector(".btn");
+
+      const add = document.querySelector(".side-bar");
+      btn.textContent = "➡️";
+      // // btn.addEventListener("click", () => {
+      // //   btn.textContent = "➡️";
+      // //   add.classList.toggle("addnav");
+      // //   btn.textContent = "⬅️";
+      // // });
+      btn.addEventListener("click", () => {
+        if (btn.textContent === "➡️") {
+          btn.textContent = "⬅️";
+        } else {
+          btn.textContent = "➡️";
+        }
+        add.classList.toggle("addnav");
+      });
+    </script>
+  </body>
+</html>
