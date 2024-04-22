@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="btn">➡️</div>
+    </div>
+    <div class="img-box">
+      <div class="btn1">⬅️</div>
+    </div>
+
+    <script>
+      const btn = document.querySelector(".btn");
+      const btn1 = document.querySelector(".btn1");
+      const add = document.querySelector(".side-bar");
+      const main = document.querySelector(".img-box");
+      btn.addEventListener("click", () => {
+        add.classList.add("addme");
+        main.classList.remove("addme");
+      });
+      btn1.addEventListener("click", () => {
+        main.classList.add("addme");
+        add.classList.remove("addme");
+      });
+      // const btn = document.querySelector(".btn");
+
+      // const add = document.querySelector(".side-bar");
+      // btn.textContent = "➡️";
+
+      // btn.addEventListener("click", () => {
+      //   if (btn.textContent === "➡️") {
+      //     btn.textContent = "⬅️";
+      //   } else {
+      //     btn.textContent = "➡️";
+      //   }
+      //   add.classList.toggle("addnav");
+      // });
+    </script>
+  </body>
+</html>

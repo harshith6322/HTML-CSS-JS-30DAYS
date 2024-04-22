@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.img-box {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  background-color: cornflowerblue;
+  transition: all 600ms;
+}
+
+.side-bar {
+  height: 100vh;
+  width: 50vw;
+  background-color: cadetblue;
+  position: relative;
+  transition: all 600ms;
+}
+.addme {
+  width: 100vw;
+}
+.btn,
+.btn1 {
+  font-size: 25px;
+  cursor: pointer;
+}
+.side-bar .btn {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
+.img-box .btn1 {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
