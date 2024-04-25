@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h2 class="logo">this is digital<span>.</span></h2>
+        <div class="links">
+          <a href="#">Service</a>
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Culture</a>
+          <a href="#">Careers</a>
+          <a href="#"
+            >Contact us
+            <div class="gen"></div>
+          </a>
+        </div>
+      </nav>
+      <h1>Digital Performance Solutions</h1>
+      <img
+        src="https://media.istockphoto.com/id/1308795063/photo/how-to-grow-vegetables-in-upcycled-plastic-water-bottles.jpg?s=612x612&w=0&k=20&c=CcHgk6Qc5y3hbBNt6wrdQ-eJ1gR3CCKwkWPuwc6UdHo="
+        alt=""
+        class="img1"
+      />
+      <img
+        src="https://st4.depositphotos.com/1667625/37955/i/450/depositphotos_379558022-stock-photo-diy-old-empty-bottles-can.jpg"
+        alt=""
+        class="img2"
+      />
+      <img
+        src="https://media.istockphoto.com/id/606370041/photo/plants-growing-in-plastic-bottles-hanging-in-garden.jpg?s=612x612&w=0&k=20&c=vBKN47rE91mCs5EBsjIrYxtnzM9LSR6B6Yz04rC3ulg="
+        alt=""
+        class="img3"
+      />
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(".img1", {
+        delay: 0.2,
+        opacity: 0,
+        y: 30,
+      });
+      gsap.from(".img2", {
+        delay: 0.2,
+        opacity: 0,
+        x: 30,
+      });
+      gsap.from(".img3", {
+        delay: 0.2,
+        opacity: 0,
+        x: -30,
+      });
+    </script>
+  </body>
+</html>
