@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h2 class="logo">this is digital<span>.</span></h2>
+        <div class="links">
+          <a href="#">Service</a>
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Culture</a>
+          <a href="#">Careers</a>
+          <a href="#"
+            >Contact us
+            <i class="bi bi-arrow-right"></i>
+            <div class="gen"></div>
+          </a>
+        </div>
+      </nav>
+      <div class="page1">
+        <h1 class="logo2">Digital Performance Solutions</h1>
+        <img
+          src="https://media.istockphoto.com/id/1308795063/photo/how-to-grow-vegetables-in-upcycled-plastic-water-bottles.jpg?s=612x612&w=0&k=20&c=CcHgk6Qc5y3hbBNt6wrdQ-eJ1gR3CCKwkWPuwc6UdHo="
+          alt=""
+          class="img1"
+        />
+        <img
+          src="https://st4.depositphotos.com/1667625/37955/i/450/depositphotos_379558022-stock-photo-diy-old-empty-bottles-can.jpg"
+          alt=""
+          class="img2"
+        />
+        <img
+          src="https://media.istockphoto.com/id/606370041/photo/plants-growing-in-plastic-bottles-hanging-in-garden.jpg?s=612x612&w=0&k=20&c=vBKN47rE91mCs5EBsjIrYxtnzM9LSR6B6Yz04rC3ulg="
+          alt=""
+          class="img3"
+        />
+      </div>
+      <div class="page2">
+        <h3>A Digital Performance Solution Agency in Manchester</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut
+          eligendi earum quos dicta eos unde aliquam repellendus cupiditate.
+        </p>
+        <h5>About us <i class="bi bi-arrow-right"></i></h5>
+      </div>
+      <div class="page3">
+        <h1>A Digital Agency</h1>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      gsap.from(".img1", {
+        delay: 0.3,
+        opacity: 0,
+        y: 40,
+      });
+      gsap.from(".img2", {
+        delay: 0.3,
+        opacity: 0,
+        x: 40,
+      });
+      // gsap.from(".links", {
+      //   delay: 1,
+      //   opacity: 0,
+      //   x: 30,
+      // });
+      gsap.from(".img3", {
+        delay: 0.3,
+        opacity: 0,
+        y: -40,
+      });
+      gsap.from(".logo2", {
+        delay: 1,
+        opacity: 0,
+      });
+      gsap.from(".page2 h3, .page2 p, .page2 h5", {
+        opacity: 0,
+        stagger: 0.5,
+        y: 50,
+        scrollTrigger: {
+          trigger: ".page2",
+          scroller: "body",
+          start: "top 60%",
+          scrub: true,
+        },
+      });
+      gsap.to(".page3", {
+        x: "-60%",
+        scrollTrigger: {
+          trigger: ".page3",
+          scroller: "body",
+          start: "top 1%",
+          end: "top -80%",
+          markers: true,
+          scrub: 2,
+          pin: true,
+        },
+      });
+    </script>
+  </body>
+</html>
