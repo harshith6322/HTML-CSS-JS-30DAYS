@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bouncingball addgsap"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      preload
+    ></script>
+    <script preload>
+      var ball = document.querySelector(".bouncingball");
+      var ball2 = document.querySelector("iframe");
+      var tl = gsap.timeline({ repeat: -1, yoyo: true });
+      tl.fromTo(
+        ".bouncingball",
+        {
+          y: 0,
+          width: "90px",
+        },
+        {
+          y: -250,
+          width: "100px",
+          duration: 1.5,
+          ease: "bounce.in",
+        }
+      );
+
+      tl.to(".bouncingball", {
+        scale: 40,
+        duration: 1,
+        ease: "slow(0.1,0.1,false)",
+      });
+
+      //   tl.to(".bouncingball", {
+      //     scale: 40,
+      //     duration: 1,
+      //     ease: "slow(0.1,0.1,false)",
+      //   });
+      //   window.onload = function () {
+      //     tl.to(".bouncingball", {
+      //       scale: 40,
+      //       duration: 1,
+      //       ease: "slow(0.1,0.1,false)",
+      //     });
+      //   };
+      //   setTimeout(function () {
+      //     var ball = document.querySelector(".bouncingball");
+      //     ball.remove();
+      //   }, 5000); // Remove the ball after 5 seconds (5000 milliseconds)
+    </script>
+  </body>
+</html>
