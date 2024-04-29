@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mouse"></div>
+    <div class="main">
+      <div class="imgcont">
+        <div class="overlay"></div>
+        <img src="./bryan-brittos-YX0z5t_6PK0-unsplash.jpg" alt="" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const mouse = document.querySelector(".mouse");
+      const imgcont = document.querySelector(".imgcont");
+      document.addEventListener("mousemove", (e) => {
+        gsap.to(mouse, {
+          x: e.clientX,
+          y: e.clientY,
+          duration: 0.6,
+          ease: "slow(0.1,0.7,false)",
+        });
+      });
+      imgcont.addEventListener("mouseenter", () => {
+        mouse.textContent = "view more";
+        gsap.to(mouse, {
+          scale: 2.5,
+          duration: 0.6,
+          ease: "slow(0.1,2,false)",
+        });
+      });
+      imgcont.addEventListener("mouseleave", () => {
+        mouse.textContent = "";
+        gsap.to(mouse, {
+          scale: 1,
+          duration: 0.6,
+          ease: "slow(0.1,2,false)",
+        });
+      });
+    </script>
+  </body>
+</html>
