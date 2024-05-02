@@ -1,0 +1,154 @@
+@font-face {
+  font-family: gr;
+  src: url(./3856NeueMachina.woff2);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: gr;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.page1 {
+  width: 100vw;
+  height: 100vh;
+}
+.page1 nav {
+  z-index: 100;
+  padding: 8px 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.page1 nav h2 i {
+  display: inline-block;
+  rotate: 150deg;
+  margin-right: 10px;
+}
+.page1 nav h2 {
+  font-family: gr;
+  font-size: 35px;
+  font-weight: 900;
+}
+.page1 nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 23px;
+}
+.page1 nav .link1 :nth-last-child(1) {
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+.center {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 50px 30px;
+  /* background-color: aqua; */
+}
+.center1 {
+  width: 50%;
+  height: 100%;
+}
+.center2 {
+  width: 50%;
+  height: 100%;
+}
+.center1 h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.center1 h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-top: 30px;
+  line-height: 23px;
+}
+.center1 button {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.center2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  padding: 15px 30px;
+}
+.move {
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  height: 100px;
+  margin-top: 6rem;
+  display: flex;
+}
+
+.movein {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  transform: translateX(0%);
+}
+.movein h1 {
+  margin-right: 35px;
+  font-size: 3.2rem;
+}
+.mainbox {
+  background-color: aqua;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+}
+/* .centerbox1 {
+} */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+
+  z-index: 1000;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: rgb(255, 255, 255);
+}
+.loader h1 {
+  font-size: 2.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader i {
+  margin-right: 15px;
+  display: inline-block;
+  rotate: 59deg;
+}
+/* .loader {
+  display: none;
+} */
